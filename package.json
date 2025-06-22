@@ -1,0 +1,50 @@
+{
+  "name": "view-html-react-js",
+  "version": "2.0.6",
+  "description": "Securely embed raw HTML inside a sandboxed iframe using React and TypeScript. Ideal for visualizations, maps, and WYSIWYG content.",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && babel src --out-dir dist --extensions \".ts,.tsx\"",
+    "type-check": "tsc --noEmit"
+  },
+  "author": "Kunal Patil",
+  "homepage": "https://github.com/mrWindswept/",
+  "dependencies": {
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "react render html",
+    "html preview react",
+    "sandbox iframe react",
+    "embed html next js",
+    "html to iframe react",
+    "secure html viewer react, blob iframe",
+    "dynamic html react",
+    "react iframe component",
+    "render third-party widget in react",
+    "react html embed",
+    "react html inside iframe",
+    "typescript html viewer"
+  ],
+  "license": "MIT"
+}
