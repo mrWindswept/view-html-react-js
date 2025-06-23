@@ -43,7 +43,13 @@ import ViewHtml, {useHtmlUrl} from "view-html-react-js";
 
 export default function App() {
 
-  // If static content
+  /**
+ * HTML content to be rendered inside an iframe.
+ * This string includes a full HTML document structure.
+ * - Can be dynamically generated, e.g., from an API response.
+ * - HTML content with any script in it can be rendered.
+ */
+
   const htmlContent = `
   <!DOCTYPE html>
   <html>
@@ -56,8 +62,18 @@ export default function App() {
   </html>
 `;
 
-  // If dynamic content
-  const htmlContent = useHtmlUrl(data);
+  /**
+ * Generates a temporary Blob URL from HTML content.
+ * Can be used to:
+ * - Open the HTML in a new tab using `window.open(blobUrl)`
+ * - Embed it in an <iframe> or any custom render logic
+ * - Avoid external hosting or CORS issues
+ *
+ * @param {string} htmlContent - The full HTML content as a string
+ * @returns {string} - A temporary Blob URL
+ */
+
+  const htmlContentUrl = useHtmlUrl(htmlContent); // return a temporary blob url
 
   return (
      <ViewHtml
